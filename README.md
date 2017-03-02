@@ -1,9 +1,9 @@
 # Gang-Wars-Competition
 This is an AI Agent that uses Minimax algorithm and Alpha-beta pruning with adaptive depth control in order to play against a human or AI opponent in a time-based special board game. It ranked 5th in the Gang Wars competition that ran the program against 61 other competing programs.
 
-##Input Format:
+##Input Format: Input.txt
 ```
-N: (int) Size of game board
+N: (int) Size of game board {Has to be within 1 and 26}
 Mode: (string) Mode of operation for the agent
     Options: 
         MINIMAX :  Used to test underlying MINIMAX algorithm
@@ -21,13 +21,23 @@ BoardState: (char[N][N]) The state of the board represented using the following 
     .: The current cell is not owned by any body
 ```
 
+##Output Format: Output.txt
+```
+BestMove: (string) A string of length 2 indicating the best cell to capture
+MoveType: (string) A string indicating what type of move is the best
+    Options:
+        Stake: Simply capture the cell
+        Raid: Capture the cell along with all neighbouring enemy cells
+BoardState: (char[N][N]) Shows the state of the board after the move is played
+```
+
 ##Examples
 
 ```
 5
 COMPETITION
 X
-1
+10
 20 16 1 32 30
 20 12 2 11 8
 28 48 9 1 1
@@ -67,3 +77,6 @@ X
 ..OO.
 .....
 ```
+
+
+If needed you can write a simple server program that pits the agent against itself or a human player.
