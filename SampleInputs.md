@@ -1,4 +1,5 @@
 #Input Format:
+```
 N: (int) Size of game board
 Mode: (string) Mode of operation for the agent
     Options: 
@@ -14,7 +15,7 @@ BoardState: (char[N][N]) The state of the board represented using the following 
     X: X owns the current cell of the board
     O: O owns the current cell of the board
     .: The current cell is not owned by any body
-
+```
 
 
 3
